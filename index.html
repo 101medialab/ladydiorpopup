@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- Google Analytics -->
+    <script>(function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-171695454-1', 'auto');
+        ga('send', 'pageview');</script>
+    <!-- End Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171695454-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-171695454-1');</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Dior</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>var gameInstance = UnityLoader.instantiate("gameContainer", "Build/test24.json", {
+            onProgress: UnityProgress,
+            Module: {
+                onRuntimeInitialized: function () {
+                    UnityProgress(gameInstance, "complete");
+                },
+            },
+            popup: function (message, callbacks) {
+                if (!callbacks || !callbacks.length) {
+                    return;
+                } else if (callbacks.length > 1) {
+                    return UnityLoader.Error.popup(this, message, callbacks);
+                } else if (callbacks[0].callback) {
+                    callbacks[0].callback();
+                }
+            },
+        });</script>
+
+
+
+    <script>function GameStartButton() {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'Start',
+                eventAction: 'GameStartButton',
+            });
+            console.log('GameStartButton');
+        }</script>
+
+    <script>function LetterPageNextPageButton() {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'LetterNextpage',
+                eventAction: 'LetterPageNextPageButton',
+            });
+            console.log('LetterPageNextPageButton');
+        }</script>
+
+    <script>function BagSelectPageNextPageButton() {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'SelectNextpage',
+                eventAction: 'BagSelectPageNextPageButton',
+            });
+            console.log('BagSelectPageNextPageButton');
+        }</script>
+
+    <script>function BagResultPageNextPageButton() {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'Finish',
+                eventAction: 'BagResultPageNextPageButton',
+            });
+            console.log('BagResultPageNextPageButton');
+        }</script>
+
+    <script>function ReStartButton() {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'Restart',
+                eventAction: 'ReStartButton',
+            });
+            console.log('ReStartButton');
+        }</script>
+
+    <script>function LinkButton() {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'Go',
+                eventAction: 'LinkButton',
+            });
+            console.log('LinkButton');
+        }</script>
+
+    <script>function GrayCannageChosen() {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'GrayCannage',
+                eventAction: 'GrayCannageChosen',
+            });
+            console.log('GrayCannageChosen');
+        }</script>
+
+    <script>function GrayToileDeJouyChosen() {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'GrayToileDeJouy',
+                eventAction: 'GrayToileDeJouyChosen',
+            });
+            console.log('GrayToileDeJouyChosen');
+        }</script>
+
+    <script>function AroundTheWorldChosen() {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'AroundTheWorld',
+                eventAction: 'AroundTheWorldChosen',
+            });
+            console.log('AroundTheWorldChosen');
+        }</script>
+
+
+</head>
+
+<body>
+
+    <div class="webgl-content" style="width: 100%; height: 100%">
+        <div id="gameContainer" style="width:100%; height:100%"></div>
+
+        <div id="overlay" class="overlay"></div>
+        <div class="counter">
+            <p id="loadingInfo">loading</p>
+            <h1 id="progressC">0%</h1>
+            <div id="ProgressLineB" class="ProgressLineB"> </div>
+            <div id="ProgressLine" class="ProgressLine"> </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
